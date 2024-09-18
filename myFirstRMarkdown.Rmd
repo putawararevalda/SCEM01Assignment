@@ -1,0 +1,23 @@
+---
+title: "myFirstRMarkdown"
+author: "Revalda Putawara"
+date: "2024-09-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Dataframe animals_df
+
+```{r}
+animals <- c( "Snake","Ostrich","Cat","Spider")
+num_legs <- c(0,2,4,8)
+animals_df <-data.frame(animals=animals,num_legs=num_legs)
+```
+
+```{r}
+print(animals_df)
+```
